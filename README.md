@@ -1,25 +1,24 @@
-<h1 align="center">📩 Spam Email Classifier — NLP + Machine Learning</h1> <p align="center"> A mid-advanced, beginner-friendly Machine Learning project that classifies emails/messages as <b>Spam</b> or <b>Not Spam</b> using classical NLP techniques and TF-IDF based text vectorization. </p>
-🚀 Project Overview
+<h1 align="center">📩 Spam Email Classifier</h1> <p align="center"> A clean, structured, and interview-ready NLP + Machine Learning project that classifies SMS/Emails as <b>Spam</b> or <b>Not Spam</b>. </p>
+🌟 1. Overview
 
-This project is an end-to-end implementation of a Spam Email Classification system using Python, NLP, and Machine Learning.
+This project is a mid-advanced, beginner-friendly Machine Learning solution built to detect spam messages using:
 
-It covers:
+Natural Language Processing (NLP)
 
-Text cleaning & preprocessing
+TF-IDF Vectorization
 
-Feature extraction using TF-IDF
+Logistic Regression & Naive Bayes
 
-Model training & comparison
+Streamlit Web App
 
-Evaluation using Precision, Recall, F1-Score
+The goal was to create a project that is:
+✔ Professional
+✔ Explainable in interviews
+✔ Neat & structured
+✔ Believable for a fresher
+✔ Strong enough to add to a portfolio
 
-Saving/loading ML models
-
-A simple Streamlit UI for real-time predictions
-
-The project is intentionally built to be advanced enough to impress, yet realistic for a fresher—so you can explain every part confidently in an interview.
-
-📂 Folder Structure
+📁 2. Project Structure
 spam-email-classifier/
 │
 ├── data/
@@ -37,147 +36,150 @@ spam-email-classifier/
 ├── app.py
 └── README.md
 
-🧠 Features
-📝 Natural Language Processing
+
+✔ Clean
+✔ Logical
+✔ Industry-style project layout
+
+🧠 3. Features
+🔹 NLP Preprocessing
 
 Lowercasing
 
-Regex-based cleaning
+Removing URLs
 
-Stopword removal (NLTK)
+Removing digits
 
-Punctuation removal
+Removing punctuation
 
-🔡 Feature Engineering
+Stopword removal
 
-TF-IDF vectorization
+🔹 Vectorization
+
+TF–IDF
 
 1–2 gram features
 
-max_features=5000
+5000 vocabulary size
 
 min_df=2
 
-🤖 Machine Learning Models
+🔹 Models Trained
 
-Trained & compared:
+Multinomial Naive Bayes
 
-Model	Why It's Used
-Multinomial Naive Bayes	Strong baseline for text problems
-Logistic Regression	High precision & strong binary classifier
+Logistic Regression (Winner)
 
-➡ Logistic Regression achieved the best F1-Score.
+🔹 Additional Highlights
 
-📊 Model Performance
+Model comparison (F1-score)
+
+Saved model + vectorizer
+
+Real-time prediction script
+
+Web interface using Streamlit
+
+📊 4. Model Performance
 Metric	Score
 Accuracy	96.86%
 Precision	97.50%
 Recall	78.52%
 F1 Score	86.99%
-Selected Model	Logistic Regression
+Best Model	Logistic Regression
 
-The model strikes a balance between precision (avoiding false positives) and recall.
+Balanced performance with strong precision.
 
-⚙️ Installation & Setup
-1️⃣ Install dependencies
+⚙️ 5. Installation
+Install requirements:
 pip install -r requirements.txt
 
-2️⃣ Download NLTK stopwords
+Download NLTK stopwords:
 python
 >>> import nltk
 >>> nltk.download("stopwords")
 >>> exit()
 
-🏋️ Train the Model
+🏋️ 6. Train the Model
 
 Run:
 
 python src/train_mid_advanced.py
 
 
-This will:
+This script will:
 
-Clean the dataset
+Clean text
+
+Vectorize data with TF-IDF
 
 Train 2 ML models
 
-Compare results
+Compare F1-scores
 
-Pick the best model
+Save the best model + vectorizer
 
-Save model + TF-IDF vectorizer
+🔍 7. Make Predictions
 
-Outputs are stored in:
+Run:
 
-/models/
-
-🔍 Run Predictions
 python src/predict_mid_advanced.py
 
 
 Example:
 
-Enter message: You have won a free prize!!
+Enter message: You won a free prize!!!
 Prediction: SPAM
 
-🌐 Streamlit Web App
+🌐 8. Streamlit App (UI)
 
-Start the UI:
+Launch the app:
 
 streamlit run app.py
 
 
-A simple web interface opens where users can:
+Provides a simple, user-friendly interface for testing messages.
 
-Enter a message
-
-View classification result
-
-See whether it is Spam or Not Spam
-
-🛠 Tech Stack
+🛠 9. Tech Stack
 
 Python
 
 Pandas
 
-scikit-learn
+Scikit-learn
 
 NLTK
 
-TF-IDF
+TF–IDF
 
 Logistic Regression
+
+Naive Bayes
 
 Streamlit
 
 Joblib
 
-Regex
+🎯 10. What I Learned
 
-📘 Key Learnings
+How preprocessing impacts ML performance
 
-Through this project, I learned:
+Why Logistic Regression performs strongly in text classification
 
-How NLP-based preprocessing improves ML accuracy
+Best practices in structuring ML projects
 
-Difference between Naive Bayes & Logistic Regression
+Saving & loading ML pipelines
 
-Why TF-IDF is effective for text classification
+Building minimal ML web apps
 
-How to structure ML projects professionally
+Model evaluation (Precision/Recall/F1)
 
-How to save and reuse ML pipelines
+🪪 11. License
 
-Basics of building ML-powered web apps
+This project is licensed under the MIT License.
 
-🪪 License
-
-This project is open-source and available under the MIT License.
-You are free to use, modify, and distribute it.
-
-✨ Contact
+✨ 12. Contact
 
 Shatakshi Tiwari
-📧 Open to AI/ML projects & collaborations
-🔗 Connect on LinkedIn!
+📩 Open for AI/ML internship & beginner roles
+🔗 Connect with me on LinkedIn
